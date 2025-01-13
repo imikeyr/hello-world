@@ -2,3 +2,41 @@ body {
     background-color:black;
     color: white;
 }
+
+.container {
+    width: 70vh;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    border: dotted 1px white;
+    background-color: blueviolet;
+}
+
+.symbol {
+    width: 20vh;
+    height: 23vh;
+    border: solid 1px red;
+}
+
+img {
+    max-width: 100%;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100vh;
+        height: 100vh;
+        flex-direction: column;
+        background-color: seagreen;
+    }
+    .symbol {
+        width: 30vh;
+        height: 33vh;
+    }
+}
